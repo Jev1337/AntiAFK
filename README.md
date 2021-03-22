@@ -95,7 +95,7 @@ To get started, You have to download and install the Prerequisites down below. A
 
 ### Prerequisites
 
-You will basically need .NET Framework 4.8 for the program to work!
+You will basically need .NET Framework for the program to work!
 * https://dotnet.microsoft.com/download/dotnet-framework/net48
 
 <!-- USAGE EXAMPLES -->
