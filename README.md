@@ -69,10 +69,10 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -102,6 +102,24 @@ You will basically need .NET Framework 4.8 for the program to work!
 ## Usage
 
 You can use the ANTI AFK System to avoid getting consequences in Games for example! Can be used in FPS Games such as Minecraft! You can also use this for apps such as Discord to avoid getting kicked from Voice Chat call if you're trying to break the world's longest discord call!
+
+<!-- Features -->
+## Features
+
+* []()Auto Enable/Disable: The program will detect whenever you're AFK to enable itself. If it detects that the user is back, It will turn itself off!
+* []()Auto Alt-Tab: Alt Tabs automatically every x Time given.
+* []()Auto Press: Automatically presses a button (or a Function Button) specified every x Time given.
+* []()Lock Keyboard: Locks keyboard in case you have a pet that keeps going over your keyboard.
+* []()Start With Windows: Starts with windows automatically.
+* []()Minimize on Enable: Program will go minimized state when enabled (Goes to system tray).
+* []()Enable on Program Startup: Program will enable itself when you start it up (Works with Minimize on Enable and Auto Enable/Disable).
+* []()Play song on Enable: Just for fun function :) .
+* []()System Tray Notifications: If you don't like Windows notifications; You can just disabled them by unticking this.
+* []()Experimental Alt-Tab: Some (Slow) Computers don't like VB Scripts running fast; Enabling this will fix it (Will add delay between alt tabs and give more alt tabs to go through).
+* []()Enable Exceptions: Want the program not to execute the ANTI AFK system when you are watching movies? You can add 'Netflix' for example in exceptions so it won't execute when 'Netflix.exe' Is running.
+* []()Enable Dark Mode: Darker = Better.
+* []()KB Locker: Want to lock some keys manually for your own purposes? Yes you can.
+* []()Save Script: You can save current configuration as a runnable .BAT file that creates a VBS (Visual Basic Script).
 
 
 <!-- ROADMAP -->
