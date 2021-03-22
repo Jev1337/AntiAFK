@@ -81,7 +81,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="About.png" alt="Logo" width="80" height="80">
+<div align="center"><img src="About.png" alt="Logo" width="566" height="402"></div>
 
 
 ### Built With
