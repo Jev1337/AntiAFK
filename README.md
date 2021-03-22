@@ -145,7 +145,7 @@ Project Link: [https://github.com/Jev1337/AntiAFK](https://github.com/Jev1337/An
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Jev1337/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Jev1337/AntiAFK.svg?style=for-the-badge
 [contributors-url]: https://github.com/Jev1337/AntiAFK/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Jev1337/AntiAFK.svg?style=for-the-badge
 [forks-url]: https://github.com/Jev1337/AntiAFK/network/members
