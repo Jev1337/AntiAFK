@@ -1,0 +1,161 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Yasmine Anti-Afk System
+</name>
+</assembly>
+<members>
+<member name="T:ANTIAFK.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ANTIAFK.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ANTIAFK.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:ANTIAFK.My.Resources.Resources.pMAiU">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ANTIAFK.My.Resources.Resources.settings_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ANTIAFK.My.Resources.Resources.settings_icon1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ANTIAFK.My.Resources.Resources.SystemIdleTimer">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:ANTIAFK.My.Resources.Resources.unnamed">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:ANTIAFK.AudioFile">
+ <summary>
+ This class is a wrapper for the Windows API calls to play wave, midi or mp3 files.
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:ANTIAFK.AudioFile.#ctor(System.String)">
+ <summary>
+ Constructor:  Location is the filename of the media to play.  Wave files and Mp3 files are the supported formats.
+ </summary>
+ <param name="Location"></param>
+ <remarks></remarks>
+</member>
+<member name="M:ANTIAFK.AudioFile.Play">
+ <summary>
+ Plays the file that is specified as the filename.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:ANTIAFK.AudioFile.Pause">
+ <summary>
+ Pause the current play back.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:ANTIAFK.AudioFile.Resume">
+ <summary>
+ Resume the current play back if it is currently paused.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:ANTIAFK.AudioFile.Stop">
+ <summary>
+ Stop the current file if it's playing.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:ANTIAFK.AudioFile.Close">
+ <summary>
+ Close the file.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:ANTIAFK.AudioFile.Wait">
+ <summary>
+ Halt the program until the .wav file is done playing.  Be careful, this will lock the entire program up until the
+ file is done playing.  It behaves as if the Windows Sleep API is called while the file is playing (and maybe it is, I don't
+ actually know, I'm just theorizing).  :P
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:ANTIAFK.AudioFile.Milleseconds">
+ <summary>
+ Sets the audio file's time format via the mciSendString API.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:ANTIAFK.AudioFile.Status">
+ <summary>
+ Gets the status of the current playback file via the mciSendString API.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:ANTIAFK.AudioFile.FileSize">
+ <summary>
+ Gets the file size of the current audio file.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:ANTIAFK.AudioFile.Channels">
+ <summary>
+ Gets the channels of the file via the mciSendString API.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:ANTIAFK.AudioFile.Debug">
+ <summary>
+ Used for debugging purposes.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:ANTIAFK.AudioFile.IsPaused">
+ <summary>
+ Whether or not the current playback is paused.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:ANTIAFK.AudioFile.Filename">
+ <summary>
+ The current filename of the file that is to be played back.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
