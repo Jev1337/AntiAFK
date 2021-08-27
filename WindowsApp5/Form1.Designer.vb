@@ -41,6 +41,7 @@ Partial Class Form1
         Me.ShowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.EnableANTIAFKToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
@@ -65,7 +66,6 @@ Partial Class Form1
         Me.AutoTimer = New System.Windows.Forms.Timer(Me.components)
         Me.Label10 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -196,40 +196,48 @@ Partial Class Form1
         Me.ContextMenuStrip1.BackgroundImage = Global.ANTIAFK.My.Resources.Resources.unnamed
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.ToolStripSeparator2, Me.EnableANTIAFKToolStripMenuItem, Me.ToolStripMenuItem4, Me.StatusToolStripMenuItem, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripSeparator1, Me.AboutToolStripMenuItem, Me.ToolStripMenuItem1, Me.ExitToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(181, 236)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 214)
         '
         'ShowToolStripMenuItem
         '
         Me.ShowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ShowToolStripMenuItem.Name = "ShowToolStripMenuItem"
-        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ShowToolStripMenuItem.Text = "Show"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
         '
         'EnableANTIAFKToolStripMenuItem
         '
         Me.EnableANTIAFKToolStripMenuItem.CheckOnClick = True
         Me.EnableANTIAFKToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.EnableANTIAFKToolStripMenuItem.Name = "EnableANTIAFKToolStripMenuItem"
-        Me.EnableANTIAFKToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EnableANTIAFKToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.EnableANTIAFKToolStripMenuItem.Text = "Toggle"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.CheckOnClick = True
+        Me.ToolStripMenuItem4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem4.Text = "Lock Keyboard"
         '
         'StatusToolStripMenuItem
         '
         Me.StatusToolStripMenuItem.Enabled = False
         Me.StatusToolStripMenuItem.Name = "StatusToolStripMenuItem"
-        Me.StatusToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StatusToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.StatusToolStripMenuItem.Text = "Disabled"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Enabled = False
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem2.Text = "Time Left: -"
         Me.ToolStripMenuItem2.Visible = False
         '
@@ -238,34 +246,34 @@ Partial Class Form1
         Me.ToolStripMenuItem3.Enabled = False
         Me.ToolStripMenuItem3.ForeColor = System.Drawing.Color.White
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem3.Text = "Auto"
         Me.ToolStripMenuItem3.Visible = False
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem1.Text = "Settings"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'TextBox2
@@ -439,14 +447,6 @@ Partial Class Form1
         'ToolTip1
         '
         '
-        'ToolStripMenuItem4
-        '
-        Me.ToolStripMenuItem4.CheckOnClick = True
-        Me.ToolStripMenuItem4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(180, 22)
-        Me.ToolStripMenuItem4.Text = "Lock Keyboard"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -469,7 +469,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "AntiAFK v4.4"
+        Me.Text = "AntiAFK v4.6"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ContextMenuStrip1.ResumeLayout(False)

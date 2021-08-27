@@ -1,12 +1,10 @@
 ﻿Imports Microsoft.Win32
-Imports System.Runtime.InteropServices
+Imports System.Reflection
 Public Class Form1
     Private keyName As String = "HKEY_CURRENT_USER\YasmineAntiAfk"
     Private Declare Function GetActiveWindow Lib "user32" Alias "GetActiveWindow" () As IntPtr
     Dim Stat As Boolean
     Dim Integral As Integer = -1
-
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         enableyasmine()
     End Sub
@@ -153,9 +151,9 @@ Public Class Form1
                         Label10.Text = "Auto - 1 time"
                     End If
                     ToolStripMenuItem3.Text = Label10.Text
-                    enableyasmine()
+                        enableyasmine()
+                    End If
                 End If
-            End If
         End If
     End Sub
     Private Sub Checker_Tick(sender As Object, e As EventArgs) Handles Checker.Tick
@@ -209,7 +207,7 @@ Public Class Form1
                                         NotifyIcon1.ShowBalloonTip(3000)
                                     End If
                                 End If
-                                Exit For
+                                    Exit For
                             End If
                         Next p
                     Catch ex As Exception
@@ -287,8 +285,11 @@ Public Class Form1
             Me.ToolStripMenuItem1.ForeColor = Color.White
             Me.ExitToolStripMenuItem.ForeColor = Color.White
 
+            Form2.TabPage1.BackgroundImage = My.Resources.unnamed
+            Form2.TabPage2.BackgroundImage = My.Resources.unnamed
+            Form2.TabPage3.BackgroundImage = My.Resources.unnamed
+            Form2.BackgroundImage = My.Resources.unnamed
             Form2.Label1.ForeColor = Color.White
-            Form2.GroupBox1.ForeColor = Color.White
             Form2.GroupBox2.ForeColor = Color.White
             Form2.GroupBox3.ForeColor = Color.White
             Form2.GroupBox4.ForeColor = Color.White
@@ -320,9 +321,12 @@ Public Class Form1
             Me.ToolStripMenuItem1.ForeColor = Color.Black
             Me.ExitToolStripMenuItem.ForeColor = Color.Black
 
+            Form2.TabPage1.BackgroundImage = Nothing
+            Form2.TabPage2.BackgroundImage = Nothing
+            Form2.TabPage3.BackgroundImage = Nothing
+            Form2.BackgroundImage = Nothing
             Form2.BackgroundImage = Nothing
             Form2.Label1.ForeColor = Color.Black
-            Form2.GroupBox1.ForeColor = Color.Black
             Form2.GroupBox2.ForeColor = Color.Black
             Form2.GroupBox3.ForeColor = Color.Black
             Form2.GroupBox4.ForeColor = Color.Black
@@ -474,7 +478,7 @@ Public Class Form1
         If Form2.CheckBox6.Checked = True Then
             enableyasmine()
         End If
-
+       
     End Sub
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
@@ -574,32 +578,32 @@ Public Class Form1
             Else
                 alttabinterval.Interval = (Integer.Parse(TextBox1.Text) * Inter)
             End If
-            Button1.Text = "Disable"
-            alttabinterval.Start()
-            Checker.Start()
-            ComboBox2.Enabled = False
-            TextBox1.Enabled = False
-            Label4.Text = "Enabled"
-            Label4.ForeColor = System.Drawing.Color.DarkGreen
-            Label6.Text = alttabinterval.Interval / 1000
-            Label7.Visible = True
-            Label8.Visible = True
-            Label9.Visible = True
-            Label5.Visible = True
-            If CheckBox3.Checked = True Then
-                Label5.Visible = False
-            End If
-            ToolStripMenuItem2.Visible = True
-            If Form2.CheckBox5.Checked = True Then
-                If CheckBox3.Checked = False Then
-                    audio.Play()
+                Button1.Text = "Disable"
+                alttabinterval.Start()
+                Checker.Start()
+                ComboBox2.Enabled = False
+                TextBox1.Enabled = False
+                Label4.Text = "Enabled"
+                Label4.ForeColor = System.Drawing.Color.DarkGreen
+                Label6.Text = alttabinterval.Interval / 1000
+                Label7.Visible = True
+                Label8.Visible = True
+                Label9.Visible = True
+                Label5.Visible = True
+                If CheckBox3.Checked = True Then
+                    Label5.Visible = False
                 End If
-            End If
-            If Form2.CheckBox3.Checked = True Then
-                Me.WindowState = FormWindowState.Minimized
-            End If
+                ToolStripMenuItem2.Visible = True
+                If Form2.CheckBox5.Checked = True Then
+                    If CheckBox3.Checked = False Then
+                        audio.Play()
+                    End If
+                End If
+                If Form2.CheckBox3.Checked = True Then
+                    Me.WindowState = FormWindowState.Minimized
+                End If
 
-        Else
+                Else
             Button1.Text = "Enable"
             alttabinterval.Stop()
             Checker.Stop()

@@ -285,16 +285,22 @@ v4.2
 v4.3 (Skipped)
 [+] Added 18th Anniversary Mode
 -
-v4.4 
+v4.4-No SRC
 [+] Added Smart Keyboard Locker. (It just might not be all the keys on your keyboard).
 [+] Added Normal Keyboard Locker. (If you want to use it for other purposes outside the ANTI AFK Enviorment or shall I say Cat/Kids Enviorment).
 [+] Now you can click once on the Tray Icon to open the app. You can also click the baloon tip to open the app!
 [-] Removed 18th Anniversary Mode
 -
-[=] I will stop working on Yasmine ANTI-AFK for a while now until I finish exams.
+v4.5 
+[+] Fixed Keyboard Locker Bugs
+[+] Organized settings (Split into: Automations, Startup Settings, Miscallaneous)
+-
+v4.6
+[+] Added Import/Export system in case you want to move into another computer without having to rewrite all the settings over again.
+[+] Added .exe location button which opens where the main executable is located at.
 
 Total Time Spent on coding Yasmine Anti AFK:
-Approx. 100 Hours
+Approx. 110 Hours
 Yasmine Anti AFK Project Coding Lines:
 Approx. 5000 Lines</value>
   </data>

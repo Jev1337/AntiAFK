@@ -85,7 +85,7 @@ Public Class Form2
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MessageBox.Show("This application is coded by Malek for the love of his life; Yasmine" + Environment.NewLine + "I Love you till the end of the time, till time dies, forever, I love you, I made this program so we can sleep together like bebe angels! I love you, My love, My life" + Environment.NewLine + Environment.NewLine + "v4.4 Optimized for Yasmine", "About", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+        MessageBox.Show("This application is coded by Jev1337" + Environment.NewLine + "Made specifically for Discord." + Environment.NewLine + Environment.NewLine + "v4.6 Public.", "About", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -439,8 +439,8 @@ Public Class Form2
             Form1.ToolStripMenuItem1.ForeColor = Color.White
             Form1.ExitToolStripMenuItem.ForeColor = Color.White
 
+
             Label1.ForeColor = Color.White
-            GroupBox1.ForeColor = Color.White
             GroupBox2.ForeColor = Color.White
             GroupBox3.ForeColor = Color.White
             GroupBox4.ForeColor = Color.White
@@ -454,7 +454,13 @@ Public Class Form2
             CheckBox8.ForeColor = Color.White
             RadioButton1.ForeColor = Color.White
             RadioButton2.ForeColor = Color.White
+            TabPage1.BackgroundImage = My.Resources.unnamed
+            TabPage2.BackgroundImage = My.Resources.unnamed
+            TabPage3.BackgroundImage = My.Resources.unnamed
         Else
+            TabPage1.BackgroundImage = Nothing
+            TabPage2.BackgroundImage = Nothing
+            TabPage3.BackgroundImage = Nothing
             Me.BackgroundImage = Nothing
             Form1.BackgroundImage = Nothing
             Form1.GroupBox1.ForeColor = Color.Black
@@ -474,7 +480,6 @@ Public Class Form2
             Form1.ExitToolStripMenuItem.ForeColor = Color.Black
 
             Label1.ForeColor = Color.Black
-            GroupBox1.ForeColor = Color.Black
             GroupBox2.ForeColor = Color.Black
             GroupBox3.ForeColor = Color.Black
             GroupBox4.ForeColor = Color.Black
@@ -614,9 +619,25 @@ Public Class Form2
 
     End Sub
 
-    Private Sub CheckBox9_CheckedChanged_3(sender As Object, e As EventArgs) Handles CheckBox9.CheckedChanged
-        If CheckBox9.Checked = True Then
-            MsgBox("This function will only work for Discord!")
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Process.Start("cmd.exe", "/c /s REG EXPORT HKEY_CURRENT_USER\YasmineAntiAfk ExportedSettingsYAAFK.reg")
+        MsgBox("Saved next to Yasmine Anti AFK Executable Location")
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim strpath As String = My.Application.Info.DirectoryPath
+        If My.Computer.FileSystem.FileExists(strpath + "\ExportedSettingsYAAFK.reg") = False Then
+            MsgBox("File not found! Please place the exported settings next to the executable!")
+        Else
+            Process.Start("cmd.exe", "/c /s REG IMPORT ExportedSettingsYAAFK.reg")
+            MsgBox("Settings Imported! Please restart the application.")
+            End
         End If
+
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Dim strpath As String = My.Application.Info.DirectoryPath
+        Process.Start(strpath)
     End Sub
 End Class
