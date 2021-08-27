@@ -56,9 +56,9 @@ Partial Class Form2
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -412,14 +412,14 @@ Partial Class Form2
         Me.TabPage3.Text = "Miscellaneous"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'Button8
+        'Button10
         '
-        Me.Button8.Location = New System.Drawing.Point(299, 30)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(73, 39)
-        Me.Button8.TabIndex = 39
-        Me.Button8.Text = "Export Settings"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Button10.Location = New System.Drawing.Point(254, 6)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(87, 23)
+        Me.Button10.TabIndex = 41
+        Me.Button10.Text = ".exe Location"
+        Me.Button10.UseVisualStyleBackColor = True
         '
         'Button9
         '
@@ -430,14 +430,14 @@ Partial Class Form2
         Me.Button9.Text = "Import Settings"
         Me.Button9.UseVisualStyleBackColor = True
         '
-        'Button10
+        'Button8
         '
-        Me.Button10.Location = New System.Drawing.Point(254, 6)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(87, 23)
-        Me.Button10.TabIndex = 41
-        Me.Button10.Text = ".exe Location"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Button8.Location = New System.Drawing.Point(299, 30)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(73, 39)
+        Me.Button8.TabIndex = 39
+        Me.Button8.Text = "Export Settings"
+        Me.Button8.UseVisualStyleBackColor = True
         '
         'Form2
         '
