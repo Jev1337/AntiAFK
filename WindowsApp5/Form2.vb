@@ -620,7 +620,7 @@ Public Class Form2
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        Process.Start("cmd.exe", "/c /s REG EXPORT HKEY_CURRENT_USER\YasmineAntiAfk ExportedSettingsYAAFK.reg")
+        Process.Start("cmd.exe", "/c REG EXPORT HKEY_CURRENT_USER\YasmineAntiAfk ExportedSettingsYAAFK.reg")
         MsgBox("Saved next to Yasmine Anti AFK Executable Location")
     End Sub
 
