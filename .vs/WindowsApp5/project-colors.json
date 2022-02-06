@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a079309e-4689-4152-9321-7816ec83874a": {
+      "ProjectGuid": "a079309e-4689-4152-9321-7816ec83874a",
+      "DisplayName": "AntiAFK",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

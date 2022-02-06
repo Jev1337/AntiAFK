@@ -298,6 +298,12 @@ v4.5
 v4.6
 [+] Added Import/Export system in case you want to move into another computer without having to rewrite all the settings over again.
 [+] Added .exe location button which opens where the main executable is located at.
+-
+v4.7
+[+] Added Warnings for Auto Mode
+-
+
+[=] I'll keep adding more warnings.
 
 Total Time Spent on coding Yasmine Anti AFK:
 Approx. 110 Hours

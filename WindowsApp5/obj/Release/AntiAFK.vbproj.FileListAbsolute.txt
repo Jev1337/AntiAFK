@@ -79,3 +79,17 @@ C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.
 C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.6\WindowsApp5\obj\Release\Yasmine Anti-Afk System.exe
 C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.6\WindowsApp5\obj\Release\Yasmine Anti-Afk System.xml
 C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.6\WindowsApp5\obj\Release\Yasmine Anti-Afk System.pdb
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\bin\Release\Yasmine Anti-Afk System.exe.config
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\bin\Release\Yasmine Anti-Afk System.exe
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\bin\Release\Yasmine Anti-Afk System.pdb
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\bin\Release\Yasmine Anti-Afk System.xml
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\AntiAFK.vbproj.AssemblyReference.cache
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\ANTIAFK.Form1.resources
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\ANTIAFK.Form2.resources
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\ANTIAFK.Keyboard.resources
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\ANTIAFK.Resources.resources
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\AntiAFK.vbproj.GenerateResource.cache
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\AntiAFK.vbproj.CoreCompileInputs.cache
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\Yasmine Anti-Afk System.exe
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\Yasmine Anti-Afk System.xml
+C:\Users\malek\OneDrive\Our Files\Yasmine Anti-AFK\Source Code\WindowsApp5 - v4.7\WindowsApp5\obj\Release\Yasmine Anti-Afk System.pdb

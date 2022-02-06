@@ -85,7 +85,7 @@ Public Class Form2
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MessageBox.Show("This application is coded by Jev1337" + Environment.NewLine + "Made specifically for Discord." + Environment.NewLine + Environment.NewLine + "v4.6 Public.", "About", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+        MessageBox.Show("This application is coded by Jev1337" + Environment.NewLine + "Made specifically for Discord." + Environment.NewLine + Environment.NewLine + "v4.7 Public.", "About", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

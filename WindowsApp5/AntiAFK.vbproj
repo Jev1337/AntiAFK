@@ -170,6 +170,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\warn.png" />
+    <Content Include="warn.png" />
     <None Include="SystemIdleTimer.dll" />
     <None Include="bin\Release\SystemIdleTimer.dll" />
     <Content Include="letter-y-key-keyboard-3-512.ico" />

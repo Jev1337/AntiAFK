@@ -5,6 +5,10 @@ Public Class Form1
     Private Declare Function GetActiveWindow Lib "user32" Alias "GetActiveWindow" () As IntPtr
     Dim Stat As Boolean
     Dim Integral As Integer = -1
+    Dim WarnString As String = ""
+    Dim Warn1 As Boolean = False
+    Dim Warn2 As Boolean = False
+    Dim warn As Boolean
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         enableyasmine()
     End Sub
@@ -151,9 +155,9 @@ Public Class Form1
                         Label10.Text = "Auto - 1 time"
                     End If
                     ToolStripMenuItem3.Text = Label10.Text
-                        enableyasmine()
-                    End If
+                    enableyasmine()
                 End If
+            End If
         End If
     End Sub
     Private Sub Checker_Tick(sender As Object, e As EventArgs) Handles Checker.Tick
@@ -714,6 +718,8 @@ Public Class Form1
             End If
             CheckBox3.Checked = False
         Else
+            PictureBox1.Visible = True
+            Warner.Enabled = True
             If SystemIdleTimer1.IsRunning = False Then
                 CheckBox3.Checked = True
                 'SystemIdleTimer1.MaxIdleTime = CUInt(numOfSeconds.Value * 1000) ' seconds to miliseconds 
@@ -753,6 +759,8 @@ Public Class Form1
                 Form2.CheckBox5.Enabled = True
                 Form2.RadioButton1.Enabled = True
                 Form2.RadioButton2.Enabled = True
+                Warner.Enabled = False
+                PictureBox1.Visible = False
             End If
         End If
     End Sub
@@ -831,5 +839,43 @@ Public Class Form1
     End Sub
 
     Private Sub ContextMenuStrip1_Click(sender As Object, e As EventArgs) Handles ContextMenuStrip1.Click
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        WarnString = ""
+        If Warn1 Then
+            WarnString = WarnString + "-30 minutes or more may break the Auto algorithm. If you have issues with it not activating, Please consider lowering the number slightly." + Environment.NewLine
+        End If
+        If Warn2 Then
+            WarnString = WarnString + "-It is recommendeded that you enable 'Start With Windows' if you have Auto Enable/Disable to make everything fully automatic"
+        End If
+        MessageBox.Show("Warnings:" & Environment.NewLine & WarnString, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    End Sub
+    Private Function togglewarn()
+        If warn Then
+            PictureBox1.Image = Nothing
+            warn = False
+        Else
+            PictureBox1.Image = My.Resources.warn
+            warn = True
+        End If
+    End Function
+    Private Sub Warner_Tick(sender As Object, e As EventArgs) Handles Warner.Tick
+        If CInt(TextBox1.Text) >= 30 Then
+            Warn1 = True
+        Else
+            Warn1 = False
+        End If
+        If Form2.CheckBox1.Checked = False Then
+            Warn2 = True
+        Else
+            Warn2 = False
+        End If
+        If Warn1 Or Warn2 Then
+            PictureBox1.Visible = True
+            togglewarn()
+        Else
+            PictureBox1.Visible = False
+        End If
     End Sub
 End Class
